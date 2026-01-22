@@ -133,8 +133,3 @@ This addon is open source under the MIT License, you can use, modify and distrib
 
 ## Disclaimer
 This addon is for learning and research purposes only. When using, please ensure you have the right to use the BVH motion capture data. The author is not responsible for any losses caused by the use of this addon.
-
-### 总结
-1. README包含中英文双语版本，结构清晰，涵盖功能介绍、安装使用、技术细节、更新日志等完整内容
-2. 突出v2.3.1版本的核心改进（帧率同步修复），并保留插件的所有核心特性说明
-3. 语言简洁专业，符合GitHub开源项目的README规范，同时兼顾新手友好性，提供详细的操作指南和注意事项
