@@ -225,22 +225,6 @@ Added binding to existing Mixamo rigs (animation transfer + baking)
 
 ---
 
-## 🚀 项目定位 | Project Positioning
-
-这个项目不是一个简单练习，而是一个：
-This project is not just a demo, but a:
-
-👉 Blender 动画工具链组件
-👉 Animation pipeline tool component
-
-👉 BVH → Mixamo 自动化解决方案
-👉 BVH to Mixamo automation solution
-
-👉 简化版动画重定向系统
-👉 Lightweight animation retargeting system
-
----
-
 ## 👤 Author
 
 **Junius Tang**
