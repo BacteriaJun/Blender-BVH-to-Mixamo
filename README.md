@@ -124,7 +124,7 @@ This addon is not just a renaming script, but a complete animation processing pi
 
 ---
 
-### 5. 动画迁移（核心）| Animation Retargeting (Core)
+### 5. 动画迁移| Animation Retargeting (Core)
 
 通过以下方式实现动画转移：
 Animation transfer is implemented via:
