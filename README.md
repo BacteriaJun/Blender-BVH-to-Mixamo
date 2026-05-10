@@ -48,13 +48,13 @@ A Blender add-on for converting BVH motion capture data into a Mixamo-compatible
   导入 BVH 后输出映射诊断信息，包括源骨骼数量、映射数量、成功匹配数量、缺失骨骼和未配置骨骼。
 
 - **Template registry for future expansion**  
-  v3.1 预留了人物模板注册表结构，未来可继续添加更多一键绑定模板。
+  v3.1 预留了人物模板注册表结构，未来会继续添加更多一键绑定模板。
 
 ---
 
 ## Requirements | 环境要求
 
-- Blender 4.0+
+- Blender 4.5+
 - BVH motion capture file
 - Mixamo-style armature or Mixamo FBX character template
 - For template binding mode: a Mixamo-compatible `.fbx` character file
@@ -359,7 +359,7 @@ In binding modes, the temporary BVH armature is removed after animation transfer
 - Added custom FBX template binding support.
 - Added template registry structure for future one-click binding expansion.
 - Improved compatibility for production-style BVH → animated FBX character workflows.
-- 新增内置 Mixamo 人物 FBX 模板绑定、自定义人物模板绑定，并保留未来扩展多模板一键绑定的结构。
+- 新增内置 Mixamo 人物 FBX 模板绑定、自定义人物模板绑定，并保留扩展多模板一键绑定。
 
 ---
 
@@ -370,20 +370,6 @@ In binding modes, the temporary BVH armature is removed after animation transfer
 - Foot locking, root motion control, loop correction, and IK-based cleanup are not yet included.
 - Custom FBX templates should use Mixamo-compatible humanoid armatures.
 - Some complex rigs may require additional retargeting calibration.
-
----
-
-## Suggested Roadmap | 后续路线建议
-
-- Batch BVH processing
-- One-click FBX export after binding
-- Multiple built-in character templates
-- Visual bone mapping editor
-- Automatic fuzzy bone-name matching
-- Root motion / in-place animation switch
-- Foot lock and ground alignment
-- T-Pose / A-Pose calibration
-- Loop animation cleanup
 
 ---
 
