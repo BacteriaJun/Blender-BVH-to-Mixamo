@@ -1,4 +1,3 @@
-
 # BVH Motion Retargeter
 
 > Retarget BVH motion to Mixamo, Unreal Engine 5, and VRM humanoid rigs directly in Blender.
