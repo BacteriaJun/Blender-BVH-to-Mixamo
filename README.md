@@ -7,6 +7,8 @@
 [![Blender](https://img.shields.io/badge/Blender-4.2%2B-orange)](https://www.blender.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+**English** | [简体中文](README_zh-CN.md)
+
 **BVH Motion Retargeter** is a Blender add-on for converting and retargeting BVH motion-capture data to common humanoid skeleton conventions.
 
 It provides a repeatable workflow for source mapping, constraint-based retargeting, animation baking, motion cleanup, and FBX export.
@@ -251,6 +253,7 @@ BVH-Motion-Retargeter/
 ├── CONTRIBUTING.md
 ├── LICENSE
 ├── README.md
+├── README_zh-CN.md
 └── pyproject.toml
 ```
 
