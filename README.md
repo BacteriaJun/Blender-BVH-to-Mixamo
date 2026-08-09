@@ -1,5 +1,8 @@
 # BVH Motion Retargeter v3.2.0
 
+[![CI](https://github.com/BacteriaJun/BVH-Motion-Retargeter/actions/workflows/ci.yml/badge.svg)](https://github.com/BacteriaJun/BVH-Motion-Retargeter/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A Blender add-on for retargeting BVH motion capture data to Mixamo, Unreal Engine 5 humanoid, and VRM body rigs, with integrated FBX export presets for production-oriented animation workflows.
 
 一个用于 Blender 的 BVH 动捕重定向插件。它可以将 BVH 动作转换并绑定到 Mixamo 标准骨骼、UE5 Humanoid 风格骨骼，以及 VRM 的 J_Bip 躯体骨骼，并提供内置 FBX 导出预设，减少手动导出配置错误。
@@ -86,7 +89,7 @@ v3.2.0 是面向发布的版本。它保留已验证稳定的 Mixamo 风格约�
 
 ## Installation | 安装方法
 
-1. Download the release ZIP package.
+1. Download the ZIP package from [GitHub Releases](https://github.com/BacteriaJun/BVH-Motion-Retargeter/releases/latest).
 2. Open Blender.
 3. Go to **Edit → Preferences → Add-ons** or **Extensions**.
 4. Choose **Install...** or **Install from Disk**.
@@ -464,12 +467,15 @@ bvh_to_mixamo/
     mixamo_default_purple.fbx
     mixamo_default_black.fbx
     mixamo_default_green.fbx
-  docs/
-    README.md
-    CHANGELOG.md
-    USER_GUIDE.md
-  tests/
-    sample_mapping_check.py
+docs/
+  user-guide.md
+scripts/
+  build_release.py
+  fetch_templates.py
+tests/
+  test_project.py
+.github/workflows/
+  ci.yml
 ```
 
 ### Architecture | 架构说明
@@ -478,8 +484,11 @@ bvh_to_mixamo/
 UI layer          → panel display and user controls
 Operator layer    → Blender button actions and file selectors
 Core layer        → BVH parsing, mapping, retargeting, export profiles
-Resources layer   → presets, templates, documentation, test helpers
+Resources layer   → installable presets and character templates
+Project tooling   → top-level docs, tests, release builder, and CI
 ```
+
+Large FBX templates are fetched from the immutable v3.2.0 release asset and verified with SHA-256 by `python scripts/fetch_templates.py`. Release ZIP files are then generated with `python scripts/build_release.py` and published as GitHub Release assets rather than committed to `main`.
 
 ---
 
@@ -636,11 +645,10 @@ Enable **Include Mesh** before export. Disable it only when you intentionally ne
 
 Junius Tang / BacteriaJun
 
-GitHub: `BacteriaJun/Blender-BVH-to-Mixamo`
+GitHub: [BacteriaJun/BVH-Motion-Retargeter](https://github.com/BacteriaJun/BVH-Motion-Retargeter)
 
 ---
 
 ## License | 许可证
 
-GPL-3.0-or-later, as declared in `blender_manifest.toml`.
-
+[MIT](LICENSE), matching `bvh_to_mixamo/blender_manifest.toml`.

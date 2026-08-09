@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+.idea/
+.vscode/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+coverage.xml
+.coverage
+htmlcov/
+dist/
+*.zip
+bvh_to_mixamo/templates/*.fbx

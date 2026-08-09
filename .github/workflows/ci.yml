@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install lint tools
+        run: python -m pip install ruff
+
+      - name: Lint Python
+        run: ruff check .
+
+      - name: Compile Python
+        run: python -m compileall -q bvh_to_mixamo scripts tests
+
+      - name: Fetch verified character templates
+        run: python scripts/fetch_templates.py
+
+      - name: Run repository tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Build Blender install package
+        run: python scripts/build_release.py
