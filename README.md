@@ -1,3 +1,4 @@
+
 # BVH Motion Retargeter
 
 > Retarget BVH motion to Mixamo, Unreal Engine 5, and VRM humanoid rigs directly in Blender.
@@ -6,6 +7,8 @@
 [![CI](https://github.com/BacteriaJun/BVH-Motion-Retargeter/actions/workflows/ci.yml/badge.svg)](https://github.com/BacteriaJun/BVH-Motion-Retargeter/actions/workflows/ci.yml)
 [![Blender](https://img.shields.io/badge/Blender-4.2%2B-orange)](https://www.blender.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+**English** | [简体中文](README_zh-CN.md)
 
 **BVH Motion Retargeter** is a Blender add-on for converting and retargeting BVH motion-capture data to common humanoid skeleton conventions.
 
@@ -251,6 +254,7 @@ BVH-Motion-Retargeter/
 ├── CONTRIBUTING.md
 ├── LICENSE
 ├── README.md
+├── README_zh-CN.md
 └── pyproject.toml
 ```
 
