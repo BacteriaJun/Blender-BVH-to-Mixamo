@@ -1,0 +1,28 @@
+{
+  "profile": "UE5_BASIC_HUMANOID",
+  "description": "Mixamo intermediate bone names converted to lightweight Unreal Engine 5 friendly humanoid names.",
+  "mapping": {
+    "mixamorig:Hips": "pelvis",
+    "mixamorig:Spine": "spine_01",
+    "mixamorig:Spine1": "spine_02",
+    "mixamorig:Spine2": "spine_03",
+    "mixamorig:Neck": "neck_01",
+    "mixamorig:Head": "head",
+    "mixamorig:LeftShoulder": "clavicle_l",
+    "mixamorig:LeftArm": "upperarm_l",
+    "mixamorig:LeftForeArm": "lowerarm_l",
+    "mixamorig:LeftHand": "hand_l",
+    "mixamorig:RightShoulder": "clavicle_r",
+    "mixamorig:RightArm": "upperarm_r",
+    "mixamorig:RightForeArm": "lowerarm_r",
+    "mixamorig:RightHand": "hand_r",
+    "mixamorig:LeftUpLeg": "thigh_l",
+    "mixamorig:LeftLeg": "calf_l",
+    "mixamorig:LeftFoot": "foot_l",
+    "mixamorig:LeftToeBase": "ball_l",
+    "mixamorig:RightUpLeg": "thigh_r",
+    "mixamorig:RightLeg": "calf_r",
+    "mixamorig:RightFoot": "foot_r",
+    "mixamorig:RightToeBase": "ball_r"
+  }
+}
